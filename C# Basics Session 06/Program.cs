@@ -129,6 +129,55 @@
             #endregion
 
             #endregion
+
+            #region Array Method
+
+            //int[] Numbers = { 5, 3, 4, 1, 2, 4 };
+            //foreach (int Number in Numbers)
+            //    Console.WriteLine(Number);
+
+            //Console.WriteLine("///////////////////");
+
+            //Array.Sort(Numbers);
+            //foreach (int Number in Numbers)
+            //    Console.WriteLine(Number);
+
+            //Array.Sort(Numbers);
+            //Array.Reverse(Numbers);
+            //foreach (int Number in Numbers)
+            //    Console.WriteLine(Number);
+
+            //Array.Sort(Numbers);
+            //Array.Reverse(Numbers);
+            //Array.Clear(Numbers);
+            //foreach (int Number in Numbers)
+            //    Console.WriteLine(Number);
+
+            //Array.Sort(Numbers);
+            //Array.Reverse(Numbers);
+            //Array.Clear(Numbers, 2, 2);
+            //foreach (int Number in Numbers)
+            //    Console.WriteLine(Number);
+
+            //Console.WriteLine(Array.IndexOf(Numbers, 4));
+            //Console.WriteLine(Array.LastIndexOf(Numbers, 4));
+
+            //int[] Arr01 = { 1, 2, 3, 4, 5 };
+            //int[] Arr02 = new int[4];
+
+            //foreach (int item in Arr02)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Array.Copy(Arr01, Arr02, 4);
+
+            //foreach (int item in Arr02)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
         }
     }
 }
