@@ -64,6 +64,43 @@
 
             #endregion
 
+            #region 2D Array [Rectangular]
+
+            //int[,] Marks = new int[2, 5] { { 100, 900, 30, 50, 40 }, 
+            //                               { 20, 10, 60, 100, 55 } };
+
+            //Marks[0, 0] = 100;
+            //Marks[1, 4] = 100;
+
+            //Console.WriteLine($"Length of Array is {Marks.Length}");
+            //Console.WriteLine($"Length of Array is {Marks.GetLength(0)}");
+            //Console.WriteLine($"Length of Array is {Marks.GetLength(1)}");
+            //Console.WriteLine($"Rank of Array is {Marks.Rank}");
+
+            //int[,] Marks = new int[2, 5];
+
+            //for (int i = 0; i < Marks.GetLength(0); i++)
+            //{
+            //    Console.WriteLine($"The Grades of student Number {i + 1}: ");
+            //    for (int j = 0; j < Marks.GetLength(1); j++)
+            //    {
+            //        Console.Write($"Subjecr Number {j + 1}: ");
+            //        Marks[i, j] = int.Parse(Console.ReadLine());
+            //    }
+            //    Console.WriteLine("//////////////////////////////////");
+            //}
+
+            //for (int i = 0; i < Marks.GetLength(0); i++)
+            //{
+            //    Console.WriteLine($"The Grades of student Number {i + 1}: ");
+            //    for (int j = 0; j < Marks.GetLength(1); j++)
+            //    {
+            //        Console.WriteLine($"Sub No {j + 1} = {Marks[i , j]}");
+            //    }
+            //    Console.WriteLine("//////////////////////////////////");
+            //}
+
+            #endregion
 
             #endregion
         }
