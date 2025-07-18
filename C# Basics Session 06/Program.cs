@@ -66,7 +66,7 @@
 
             #region 2D Array [Rectangular]
 
-            //int[,] Marks = new int[2, 5] { { 100, 900, 30, 50, 40 }, 
+            //int[,] Marks = new int[2, 5] { { 100, 900, 30, 50, 40 },
             //                               { 20, 10, 60, 100, 55 } };
 
             //Marks[0, 0] = 100;
@@ -82,10 +82,13 @@
             //for (int i = 0; i < Marks.GetLength(0); i++)
             //{
             //    Console.WriteLine($"The Grades of student Number {i + 1}: ");
-            //    for (int j = 0; j < Marks.GetLength(1); j++)
+            //    for (int j = 0; j < Marks.GetLength(1); /*j++*/)
             //    {
             //        Console.Write($"Subjecr Number {j + 1}: ");
-            //        Marks[i, j] = int.Parse(Console.ReadLine());
+            //        //Marks[i, j] = int.Parse(Console.ReadLine());
+            //        bool Flag = int.TryParse(Console.ReadLine(), out Marks[i, j]);
+            //        if (Flag)
+            //            j++;
             //    }
             //    Console.WriteLine("//////////////////////////////////");
             //}
@@ -95,9 +98,14 @@
             //    Console.WriteLine($"The Grades of student Number {i + 1}: ");
             //    for (int j = 0; j < Marks.GetLength(1); j++)
             //    {
-            //        Console.WriteLine($"Sub No {j + 1} = {Marks[i , j]}");
+            //        Console.WriteLine($"Sub No {j + 1} = {Marks[i, j]}");
             //    }
             //    Console.WriteLine("//////////////////////////////////");
+            //}
+
+            //for (int i = 0; i < Marks.Length; i++)
+            //{
+            //    Console.WriteLine(Marks[i/Marks.GetLength(1), i % Marks.GetLength(1)]);
             //}
 
             #endregion
