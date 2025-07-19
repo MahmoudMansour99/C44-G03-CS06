@@ -20,6 +20,15 @@
             X = Y;
             Y = Temp;
         }
+        public static int SumArray(int[] Arr)
+        {
+            int Sum = 0;
+            for (int i = 0; i < Arr.Length; i++)
+            {
+                Sum += Arr[i];
+            }
+            return Sum;
+        }
 
         #endregion
 
@@ -234,6 +243,21 @@
             //Console.WriteLine(B);
             #endregion
 
+            #endregion
+
+            #region Function Parameters [Reference Type]
+            #region Example 01
+            #region Passing By Value
+
+            //int[] Numbers = { 1, 2, 3 };
+            //Console.WriteLine(SumArray(Numbers));
+            //Console.WriteLine(Numbers.GetHashCode());
+
+            #endregion
+            #region Passing by Reference 
+
+            #endregion
+            #endregion
             #endregion
 
             #endregion
