@@ -1,4 +1,7 @@
-﻿namespace C__Basics_Session_06
+﻿using System.Data;
+using System.Security.Cryptography.X509Certificates;
+
+namespace C__Basics_Session_06
 {
     internal class Program
     {
@@ -14,17 +17,17 @@
                 Console.WriteLine(Pattern);
             }
         }
-        public static void Swap(ref int X,ref int Y)
+        public static void Swap(ref int X, ref int Y)
         {
             int Temp = X;
             X = Y;
             Y = Temp;
         }
-        public static int SumArray(int[] Arr)
+        public static int SumArray(params int[] Arr)
         {
             int Sum = 0;
             //Arr[0] = 100;
-            Arr = new int[] { 100, 200, 300};
+            //Arr = new int[] { 100, 200, 300};
             for (int i = 0; i < Arr.Length; i++)
             {
                 Sum += Arr[i];
@@ -50,6 +53,14 @@
             //return [Sub, Sum];
             //return new { Sub, Sum };
         }
+        public static void Conact<T>(params ReadOnlySpan<T> items)
+        {
+            for (int i = 0; i < items.Length; i++)
+            {
+                Console.Write($"{items[i]} ");
+            }
+        }
+
 
         #endregion
 
@@ -316,6 +327,27 @@
 
             //Console.WriteLine(M);
             //Console.WriteLine(B);
+
+            #endregion
+
+            #region Function Parameters [Params]
+
+            #region Before C#13
+
+            //int[] Numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //int Result = SumArray(1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+            //Console.WriteLine(Result);
+
+            //string Message = string.Format("Hello {0} Your Age is {1}", "Ahmed", );
+
+            #endregion
+
+            #region After C#13
+
+            //Conact<object>("Hello Ahmed", "Welcome To Route", "Your Number is", 123456789, "Date is", DateTime.Now);
+
+            #endregion
 
             #endregion
 
