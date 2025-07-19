@@ -23,6 +23,8 @@
         public static int SumArray(int[] Arr)
         {
             int Sum = 0;
+            //Arr[0] = 100;
+            Arr = new int[] { 100, 200, 300};
             for (int i = 0; i < Arr.Length; i++)
             {
                 Sum += Arr[i];
@@ -32,7 +34,8 @@
         public static int SumArray(ref int[] Arr)
         {
             int Sum = 0;
-            Arr[0] = 100;
+            //Arr[0] = 100;
+            Arr = new int[] { 100, 200, 300 };
             for (int i = 0; i < Arr.Length; i++)
             {
                 Sum += Arr[i];
@@ -274,7 +277,28 @@
             #endregion
             #endregion
 
+            #region Example 02
 
+            #region Passing by Value
+
+            //int[] Numbers = { 1, 2, 3 };
+            //Console.WriteLine(SumArray(Numbers));
+            //Console.WriteLine(Numbers.GetHashCode());
+            //Console.WriteLine(Numbers[0]);
+
+
+            #endregion
+
+            #region Passing by Reference
+
+            //int[] Numbers = { 1, 2, 3 };
+            //Console.WriteLine(SumArray(ref Numbers));
+            //Console.WriteLine(Numbers.GetHashCode());
+            //Console.WriteLine(Numbers[0]);
+
+            #endregion
+
+            #endregion
 
             #endregion
 
