@@ -29,6 +29,16 @@
             }
             return Sum;
         }
+        public static int SumArray(ref int[] Arr)
+        {
+            int Sum = 0;
+            Arr[0] = 100;
+            for (int i = 0; i < Arr.Length; i++)
+            {
+                Sum += Arr[i];
+            }
+            return Sum;
+        }
 
         #endregion
 
@@ -246,6 +256,7 @@
             #endregion
 
             #region Function Parameters [Reference Type]
+
             #region Example 01
             #region Passing By Value
 
@@ -256,8 +267,15 @@
             #endregion
             #region Passing by Reference 
 
+            //int[] Numbers = { 1, 2, 3 };
+            //Console.WriteLine(SumArray(ref Numbers));
+            //Console.WriteLine(Numbers.GetHashCode());
+
             #endregion
             #endregion
+
+
+
             #endregion
 
             #endregion
