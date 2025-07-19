@@ -2,6 +2,21 @@
 {
     internal class Program
     {
+        //. Method
+        // 1.1 Class Member Method [Static Method]
+        // 1.2 Object Member Method [Non-Static Method]
+        #region Method
+
+        public static void PrintShape(int Count = 5, string Pattern = "_-_")
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(Pattern);
+            }
+        }
+
+        #endregion
+
         static void Main(string[] args)
         {
             #region Arrays
@@ -176,6 +191,20 @@
             //{
             //    Console.WriteLine(item);
             //}
+
+            #endregion
+
+            #region Functions
+
+            #region Function Prototype
+            //PrintShape(5, ":)");
+            //PrintShape(Pattern: ":)", Count: 5);
+            //PrintShape(Pattern: ":)");
+
+            //PrintShape(Pattern: @"/*\");
+
+            //Console.WriteLine("@Welcome Mostafa' Hello Amr");
+            #endregion
 
             #endregion
         }
