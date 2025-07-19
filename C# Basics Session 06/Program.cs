@@ -42,6 +42,14 @@
             }
             return Sum;
         }
+        public static void SumSub(int X, int Y, out int Sum, out int Sub)
+        {
+            Sum = X + Y;
+            Sub = X - Y;
+            //return new int[] { Sub, Sum };
+            //return [Sub, Sum];
+            //return new { Sub, Sum };
+        }
 
         #endregion
 
@@ -299,6 +307,15 @@
             #endregion
 
             #endregion
+
+            #endregion
+
+            #region Function Parameters [Passing by Out]
+
+            //SumSub(10, 5, out int M, out int B);
+
+            //Console.WriteLine(M);
+            //Console.WriteLine(B);
 
             #endregion
 
