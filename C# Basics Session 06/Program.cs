@@ -14,6 +14,12 @@
                 Console.WriteLine(Pattern);
             }
         }
+        public static void Swap(ref int X,ref int Y)
+        {
+            int Temp = X;
+            X = Y;
+            Y = Temp;
+        }
 
         #endregion
 
@@ -204,6 +210,30 @@
             //PrintShape(Pattern: @"/*\");
 
             //Console.WriteLine("@Welcome Mostafa' Hello Amr");
+            #endregion
+
+            #region Function Parameters [Value Type]
+
+            #region Passing by Value
+            //int A = 9;
+            //int B = 4;
+            //Console.WriteLine(A);
+            //Console.WriteLine(B);
+            //Swap(A, B);
+            //Console.WriteLine(A);
+            //Console.WriteLine(B);
+            #endregion
+
+            #region Passing by Reference
+            //int A = 9;
+            //int B = 4;
+            //Console.WriteLine(A);
+            //Console.WriteLine(B);
+            //Swap(ref A, ref B);
+            //Console.WriteLine(A);
+            //Console.WriteLine(B);
+            #endregion
+
             #endregion
 
             #endregion
