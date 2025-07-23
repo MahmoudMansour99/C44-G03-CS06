@@ -8,58 +8,59 @@ namespace C__Basics_Session_06
         //. Method
         // 1.1 Class Member Method [Static Method]
         // 1.2 Object Member Method [Non-Static Method]
+
         #region Method
 
-        public static void PrintShape(int Count = 5, string Pattern = "_-_")
-        {
-            for (int i = 0; i < 5; i++)
-            {
-                Console.WriteLine(Pattern);
-            }
-        }
-        public static void Swap(ref int X, ref int Y)
-        {
-            int Temp = X;
-            X = Y;
-            Y = Temp;
-        }
-        public static int SumArray(params int[] Arr)
-        {
-            int Sum = 0;
-            //Arr[0] = 100;
-            //Arr = new int[] { 100, 200, 300};
-            for (int i = 0; i < Arr.Length; i++)
-            {
-                Sum += Arr[i];
-            }
-            return Sum;
-        }
-        public static int SumArray(ref int[] Arr)
-        {
-            int Sum = 0;
-            //Arr[0] = 100;
-            Arr = new int[] { 100, 200, 300 };
-            for (int i = 0; i < Arr.Length; i++)
-            {
-                Sum += Arr[i];
-            }
-            return Sum;
-        }
-        public static void SumSub(int X, int Y, out int Sum, out int Sub)
-        {
-            Sum = X + Y;
-            Sub = X - Y;
-            //return new int[] { Sub, Sum };
-            //return [Sub, Sum];
-            //return new { Sub, Sum };
-        }
-        public static void Conact<T>(params ReadOnlySpan<T> items)
-        {
-            for (int i = 0; i < items.Length; i++)
-            {
-                Console.Write($"{items[i]} ");
-            }
-        }
+        //public static void PrintShape(int Count = 5, string Pattern = "_-_")
+        //{
+        //    for (int i = 0; i < 5; i++)
+        //    {
+        //        Console.WriteLine(Pattern);
+        //    }
+        //}
+        //public static void Swap(ref int X, ref int Y)
+        //{
+        //    int Temp = X;
+        //    X = Y;
+        //    Y = Temp;
+        //}
+        //public static int SumArray(params int[] Arr)
+        //{
+        //    int Sum = 0;
+        //    //Arr[0] = 100;
+        //    //Arr = new int[] { 100, 200, 300};
+        //    for (int i = 0; i < Arr.Length; i++)
+        //    {
+        //        Sum += Arr[i];
+        //    }
+        //    return Sum;
+        //}
+        //public static int SumArray(ref int[] Arr)
+        //{
+        //    int Sum = 0;
+        //    //Arr[0] = 100;
+        //    Arr = new int[] { 100, 200, 300 };
+        //    for (int i = 0; i < Arr.Length; i++)
+        //    {
+        //        Sum += Arr[i];
+        //    }
+        //    return Sum;
+        //}
+        //public static void SumSub(int X, int Y, out int Sum, out int Sub)
+        //{
+        //    Sum = X + Y;
+        //    Sub = X - Y;
+        //    //return new int[] { Sub, Sum };
+        //    //return [Sub, Sum];
+        //    //return new { Sub, Sum };
+        //}
+        //public static void Conact<T>(params ReadOnlySpan<T> items)
+        //{
+        //    for (int i = 0; i < items.Length; i++)
+        //    {
+        //        Console.Write($"{items[i]} ");
+        //    }
+        //}
 
 
         #endregion
@@ -348,6 +349,33 @@ namespace C__Basics_Session_06
             //Conact<object>("Hello Ahmed", "Welcome To Route", "Your Number is", 123456789, "Date is", DateTime.Now);
 
             #endregion
+
+            #endregion
+
+            #endregion
+
+            #region Boxing, Unboxing
+
+            #region Boxing [Value Type => Reverence Type]
+
+            //int X = 100;
+
+            //object obj = (object)X;
+
+            //obj = 1.2;
+            //obj = 'A';
+            //obj = true;
+            //obj = 1.2m;
+
+            #endregion
+
+            #region Unboxing [Reference Type => Value Type]
+
+            //object obj = 10;
+
+            //int X = (int)obj;
+
+            //Console.WriteLine(X);
 
             #endregion
 
