@@ -401,33 +401,41 @@ namespace C__Basics_Session_06
 
             #region Example 02 [Casting from Nullable Type to non-Nullable Type]
 
-            int X = 10;
-            int? Y = X;
+            //int X = 10;
+            //int? Y = X;
 
             // Implicit Casting
-            
-            int? A = 10;
-            int B = (int)A;
-            // Explicit Casting
 
-            if (A is not null)
-                B = (int)A;
-            else
-                B = 0;
-            
-            if (A.HasValue)
-                B = (int)A;
-            else
-                B = 0;
+            //int? A = 10;
+            //int B = (int)A;
+            //// Explicit Casting
 
-            B = A.HasValue ? (int)A : 0;
-            B = A.HasValue ? A.Value : 0;
+            //if (A is not null)
+            //    B = (int)A;
+            //else
+            //    B = 0;
 
-            B = A ?? 0;
+            //if (A.HasValue)
+            //    B = (int)A;
+            //else
+            //    B = 0;
 
-            B = A.GetValueOrDefault();
+            //B = A.HasValue ? (int)A : 0;
+            //B = A.HasValue ? A.Value : 0;
+
+            //B = A ?? 0;
+
+            //B = A.GetValueOrDefault();
 
             #endregion
+
+            #endregion
+
+            #region Nullable Reference Type
+
+            //string? Name = null;
+
+            //Console.WriteLine(Name);
 
             #endregion
         }
