@@ -438,6 +438,46 @@ namespace C__Basics_Session_06
             //Console.WriteLine(Name);
 
             #endregion
+
+            #region Null Conditional | Propagation Operator
+
+            //Employee employee = new Employee()
+            //{
+            //    Id = 10,
+            //    Name = "Ahmed",
+            //    Department = new Department()
+            //    {
+            //        Id = 1,
+            //        Name = "HR"
+            //    }
+            //};
+
+            //if (employee is not null)
+            //{
+            //    if (employee.Department is not null)
+            //    {
+            //        Console.WriteLine(employee.Name);
+            //        Console.WriteLine(employee.Department.Name);
+            //    }
+            //}
+
+            //Console.WriteLine(employee?.Department?.Name?? "Not Null");
+
+            //int[] Number = { 1, 2, 3 };
+
+            //int Length = Number?.Length ?? 0;
+
+            //Console.WriteLine(Length);
+
+            //if (Number is not null)
+            //{
+            //    for (int i = 0; i < Number.Length; i++ )
+            //    {
+            //        Console.WriteLine(Number[i]);
+            //    }
+            //}
+
+            #endregion
         }
     }
 }
