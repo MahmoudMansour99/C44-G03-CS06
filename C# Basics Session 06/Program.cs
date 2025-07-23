@@ -380,6 +380,56 @@ namespace C__Basics_Session_06
             #endregion
 
             #endregion
+
+            #region Nullable Value Type
+
+            #region Example 01
+
+            //int X = 10;
+            ////X = null; Invalid
+            //Nullable<int> Y = 10;
+
+            //Y = null; // Valid
+
+            //int? Z = 100;
+
+            //Z = null;
+
+            //Console.WriteLine(Z);
+
+            #endregion
+
+            #region Example 02 [Casting from Nullable Type to non-Nullable Type]
+
+            int X = 10;
+            int? Y = X;
+
+            // Implicit Casting
+            
+            int? A = 10;
+            int B = (int)A;
+            // Explicit Casting
+
+            if (A is not null)
+                B = (int)A;
+            else
+                B = 0;
+            
+            if (A.HasValue)
+                B = (int)A;
+            else
+                B = 0;
+
+            B = A.HasValue ? (int)A : 0;
+            B = A.HasValue ? A.Value : 0;
+
+            B = A ?? 0;
+
+            B = A.GetValueOrDefault();
+
+            #endregion
+
+            #endregion
         }
     }
 }
